@@ -1,0 +1,493 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.linklogo{
+    display: none;
+}
+body{
+    background-color: white;
+}
+
+/* CSS Navbar */
+nav{
+    background-color: #361646;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.img-navbar{
+    width: 80px;
+}
+.ul-navbar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+.li-navbar a{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 23px;
+    padding: 8px 0;
+    border-bottom: 1px solid #75c5f000;
+    transition: all;
+    transition-duration: 500ms;
+}
+.li-navbar a:hover{
+    color: #9a3fc7;
+    border-bottom: 1px solid #9a3fc7;
+    
+}
+.nav-icon{
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+@media only screen and (max-width : 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul.ul-navbar{
+        display: none;
+    }
+    nav ul .li-navbar{
+        text-decoration: none;
+        list-style: none;
+        padding-top: 10px;
+        text-align: center;
+
+    }
+    .nav-icon{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* CSS Navbar End */
+
+/* CSS Content Start */
+.div-cont{
+    position: relative;
+}
+.div-cont .wrapper{
+    width: 99vw;
+    height: 80vh;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+    margin: 2rem auto;
+    overflow: hidden;
+}
+.div-cont .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+.div-cont #slider-img-1{
+    background-image: url(Image/valleweb.png);
+    background-position: center;
+}
+.div-cont #slider-img-2{
+    background-image: url(Image/Welcome.png);
+    background-position: center;
+}
+.div-cont #slider-img-3{
+    background-image: url(Image/valleweb.png);
+    background-position: center;
+}
+.div-cont #slider-img-4{
+    background-image: url(Image/Welcome.png);
+    background-position: center;
+}
+.div-cont .button-holder .button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 1rem;
+}
+.div-cont .button-holder{
+    position: absolute;
+    left: 42.5%;
+    bottom: 0%;
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px #75c5f0;
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+@media only screen and (max-width : 768px){
+    .div-cont .wrapper{
+        width: 95vw;
+        height: 90vh;
+    }
+    .div-cont .button-holder{
+        position: absolute;
+        left: 35%;
+        bottom: 0%;
+    }
+}
+/* CSS Content End */
+
+/* CSS Content 2 Start */
+.div-cont2{
+    background-color: #361646;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 4rem;
+}
+.ul-liup{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.li-match{
+    font-weight: bold;
+    font-style: italic;
+}
+.div-cont3{
+    background-color: #361646;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem;
+    gap: 2rem;
+}
+.img-match{
+    width: 95px;
+}
+.li-vs{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+.img-match2{
+    width: 100px;
+}
+.ul-lidate{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 6px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 1rem 1rem;
+}
+.li-watch a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #12273c00;
+    transition: all;
+    transition-duration: 500ms;
+}
+.li-watch a:hover{
+    color: #12273c;
+    border-bottom: 1px solid #12273c;
+}
+/* CSS Content 2 End */
+
+/* CSS Content 3 Start */
+.sponsor{
+    background-color: #69407e;
+    display: flex;
+    padding: 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.sponsor .sponsor-left{
+    width: 50%;
+}
+.sponsor .sponsor-left p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+.sponsor .sponsor-left span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.sponsor .sponsor-right{
+    width: 35%;
+}
+.sponsor .sponsor-right img{
+    width: 105px;
+}
+/* CSS Content 3 End */
+
+/* CSS Content 4 Start */
+.evos-team{
+    background-color: #361646;
+    display: flex;
+    padding: 1rem 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.evos-team .team-left{
+    width: 56%;
+}
+.evos-team .team-left p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+.evos-team .team-left span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.evos-team .team-right{
+    width: 35%;
+}
+.evos-team .team-right a img{
+    width: 32%;
+}
+
+/* CSS Content 4 End */
+
+/* CSS Content 5 Start */
+.evos-shop{
+    background-color: white;
+    display: flex;
+    padding: 1rem 4rem;
+    align-items: center;
+    justify-content: left;
+    padding-top: 75px;
+}
+.evos-shop .shop-left{
+    width: 60%;
+}
+.evos-shop .shop-left img{
+    width: 100%;
+    padding-top: 15px;
+}
+.evos-shop .shop-right{
+    width: 35%;
+}
+.evos-shop .shop-right h1{
+    color: rgb(17, 17, 17);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    padding-top: 20px;
+}
+.evos-shop .shop-right p{
+    color: rgb(17, 17, 17);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.evos-shop .shop-right h2{
+    color: #361646;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+.evos-shop .shop-right h2 a{
+    color: #361646;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 500ms;
+}
+.evos-shop .shop-right h2 a:hover{
+    color: #9a3fc7;
+}
+
+@media only screen and (max-width : 768px){
+    .evos-team .team-right a img{
+        width: 95%;
+    }
+    .evos-team .team-left,
+    .evos-team .team-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .sponsor .sponsor-right img{
+        width: 90%;
+    }
+    .sponsor .sponsor-left,
+    .sponsor .sponsor-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .evos-shop .shop-left img{
+        width: 100%;
+    }
+    .evos-shop .shop-right h1{
+        font-size: 115%;
+    }
+    .evos-shop .shop-right p{
+        font-size: 80%;
+    }
+    .evos-shop .shop-right h2{
+        font-size: 100%;
+    }
+    
+}
+/* CSS Content 5 End */
+
+/* CSS Footer Start */
+footer{
+    position: fixed;
+    bottom: 0.;
+}
+.footer{
+    background-color: #12273c;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 100px;
+}
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+@media (max-height:800px){
+    footer{
+        position: static;
+    }
+}
+.footer .footer-left{
+    width: 36%;
+}
+.footer h3{
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer .footer-left img{
+    width: 25%;
+    vertical-align: middle;
+}
+.footer .footer-left .evoslogo{
+    width: 100%;
+}
+.footer .footer-copyright{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 5%;
+}
+
+.footer .footer-center{
+    width: 30%;
+}
+.footer .footer-center i{
+    background-color: white;
+    border-radius: 50%;
+    color: #12273c;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 42px;
+    margin: 12px 5px;
+    vertical-align: middle;
+    transition: all;
+    transition-duration: 500ms;
+}
+.footer .footer-center a i:hover{
+    background-color: #75c5f0;
+}
+.footer .footer-center p{
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin: 0px;
+    font-size: 15px;
+}
+.footer .footer-center .p-follow{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-right{
+    width: 30%;
+}
+.footer .footer-about{
+    line-height: 20px;
+    color: white;
+    font-size: 13px;
+    margin-top: 0px;
+    font-weight: normal;
+}
+.footer .footer-about span{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer .footer-right i{
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #12273c;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 42px;
+    margin: 12px 5px;
+    vertical-align: middle;
+    margin-top: 25px;
+}
+.footer .footer-right p{
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin: 0px;
+    font-size: 15px;
+}
+.footer .footer-right .p-nomor{
+    margin-top: 10px;
+}
+
+@media (max-width: 880px){
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+}
+/* CSS Footer End */
